@@ -73,7 +73,6 @@ class PluginApiServiceSpec extends Specification implements ServiceUnitTest<Plug
         def entry = service.providers[0]
 
         then:
-        println(entry)
         response.size() == 1
         service.service == "Notification"
         service.desc == "Triggered when a Job starts, succeeds, or fails."
@@ -347,4 +346,3 @@ class PluginApiServiceSpec extends Specification implements ServiceUnitTest<Plug
         }
     }
 }
-
